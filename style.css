@@ -1,0 +1,84 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-heading {
+    font-size: 3rem;
+    color: #333;
+}
+
+.sub-heading {
+    margin-top: 20px;
+}
+
+.category-btn {
+    margin: 10px 15px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.category-btn:hover {
+    background-color: #45a049;
+}
+
+/* For dynamic showcase projects here styling */
+.projects {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project {
+    background-color: #232222;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    display: none; /* Hide all projects initially */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Lift the card */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
+}
+
+.projects img {
+    width: 100%;
+    /* height: auto; */
+    height: 210px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.projects h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    /* color: #333; */
+    color: white;
+}
+
+.projects p {
+    font-size: 1rem;
+    color: #777;
+}

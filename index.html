@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-heading">My Projects</h1>
+
+        <div class="sub-heading">
+            <button class="category-btn" onclick="showProjects('all')">All Projects</button>
+            <button class="category-btn" onclick="showProjects('web')">WebDev</button>
+            <button class="category-btn" onclick="showProjects('android')">Android</button>
+        </div>
+
+        <div class="projects" id="projects">
+            <!-- we will be dynamically add projects here by js -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
